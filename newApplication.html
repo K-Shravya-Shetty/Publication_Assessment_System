@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Application</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
+
 <body>
     <div class="form">
         <form>
             <h1>New Application</h1>
             <h3>Faculty Details</h3>
-            <label class="heading">Name : </label><input class="form-input" type="text"><br>
+            <label class="heading">Name : </label><input class="form-input" type="text" /><br />
             <label class="form-label">Department : </label><select class="option">
                 <option value="CSE">CSE</option>
                 <option value="ECE">ECE</option>
@@ -18,29 +25,71 @@
                 <option value="EEE">EEE</option>
                 <option value="MECH">MECH</option>
                 <option value="CIV">CIVIL</option>
-            </select><br>
-            <label class="form-label">Email Id : <input type="email" placeholder="Email"></label><br>
-            <label class="form-label">Phone Number : <input type="text" placeholder="Phone number"></label>
-              <h3>Publication Details</h3>
-              <label class="form-label">Title of publication : </label><input type="text" class="form-input"><br>
-              <label class="form-label">Co-Authors : </label><input type="text" class="form-input"><br>
-              <label class="form-label">Type of publication</label><br>
-              <input type="radio" name="typ-pub" value="incentive" class="radio-btn">
-              <label for="National" class="form-label">National</label><br>
-              <input type="radio" name="typ-pub" value="support" checked="checked" class="radio-btn">
-              <label for="International" class="form-label">International</label><br>
-              <h3>Application For</h3>
-                <input type="radio" name="application" value="incentive" class="radio-btn">
-                <label for="conference-reg" class="form-label">Conference Registration/Publication Support</label><br>
-                <input type="radio" name="application" value="support" checked="checked" class="radio-btn">
-                <label for="conference-pub" class="form-label">Cash Award for conference publication</label><br>
-                <input type="radio"  name="application" value="journal-support" class="radio-btn">
-                <label for="journal-pub" class="form-label">Cash Award for Journal Publication</label><br>
-                <input type="radio"  name="application" value="journal-support" class="radio-btn">
-                <label for="book-chp-pub" class="form-label">Cash Award for Book Chapter</label><br>
-                <input type="radio"  name="application" value="journal-support" class="radio-btn">
-                <label for="book" class="form-label">Cash Award for Book</label><br>
+            </select><br />
+            <label class="form-label">Email Id : <input type="email" placeholder="Email" /></label><br />
+            <label class="form-label">Phone Number : <input type="text" placeholder="Phone number" /></label>
+            <h3>Publication Details</h3>
+            <label class="form-label">Title of publication : </label><input type="text" class="form-input" /><br />
+            <label class="form-label">Co-Authors : </label><input type="text" class="form-input" /><br />
+            <label class="form-label">Type of publication</label><br />
+            <input type="radio" name="typ-pub" value="incentive" class="radio-btn" />
+            <label for="National" class="form-label">National</label><br />
+            <input type="radio" name="typ-pub" value="support" checked="checked" class="radio-btn" />
+            <label for="International" class="form-label">International</label><br />
+            <h3>Application For</h3>
+    <input type="radio" name="application" value="conference-reg" class="radio-btn" id="conference-reg">
+    <label for="conference-reg" class="form-label">Conference Registration/Publication Support</label><br>
+    <input type="radio" name="application" value="conference-pub" checked="checked" class="radio-btn" id="conference-pub">
+    <label for="conference-pub" class="form-label">Cash Award for conference publication</label><br>
+    <input type="radio" name="application" value="journal-pub" class="radio-btn" id="journal-pub">
+    <label for="journal-pub" class="form-label">Cash Award for Journal Publication</label><br>
+    <input type="radio" name="application" value="book-chp-pub" class="radio-btn" id="book-chp-pub">
+    <label for="book-chp-pub" class="form-label">Cash Award for Book Chapter</label><br>
+    <input type="radio" name="application" value="book" class="radio-btn" id="book">
+    <label for="book" class="form-label">Cash Award for Book</label><br>
+
+    <div id="conference-reg-fields" class="hidden">
+        <h4>Conference Registration/Publication Support Details</h4>
+        <label for="conf-name">Conference Name:</label>
+        <input type="text" id="conf-name" name="conf-name"><br>
+        <label for="conf-date">Conference Date:</label>
+        <input type="date" id="conf-date" name="conf-date"><br>
+    </div>
+
+    <div id="conference-pub-fields" class="hidden">
+        <h4>Cash Award for Conference Publication Details</h4>
+        <label for="paper-title">Paper Title:</label>
+        <input type="text" id="paper-title" name="paper-title"><br>
+        <label for="conf-pub-date">Publication Date:</label>
+        <input type="date" id="conf-pub-date" name="conf-pub-date"><br>
+    </div>
+
+    <div id="journal-pub-fields" class="hidden">
+        <h4>Cash Award for Journal Publication Details</h4>
+        <label for="journal-name">Journal Name:</label>
+        <input type="text" id="journal-name" name="journal-name"><br>
+        <label for="journal-pub-date">Publication Date:</label>
+        <input type="date" id="journal-pub-date" name="journal-pub-date"><br>
+    </div>
+
+    <div id="book-chp-pub-fields" class="hidden">
+        <h4>Cash Award for Book Chapter Details</h4>
+        <label for="book-chapter-title">Chapter Title:</label>
+        <input type="text" id="book-chapter-title" name="book-chapter-title"><br>
+        <label for="book-chapter-pub-date">Publication Date:</label>
+        <input type="date" id="book-chapter-pub-date" name="book-chapter-pub-date"><br>
+    </div>
+
+    <div id="book-fields" class="hidden">
+        <h4>Cash Award for Book Details</h4>
+        <label for="book-title">Book Title:</label>
+        <input type="text" id="book-title" name="book-title"><br>
+        <label for="book-pub-date">Publication Date:</label>
+        <input type="date" id="book-pub-date" name="book-pub-date"><br>
+    </div>
         </form>
     </div>
+    <script src="newApplication.js"></script>
 </body>
+
 </html>
