@@ -19,8 +19,8 @@
                 <option value="MECH">MECH</option>
                 <option value="CIV">CIVIL</option>
             </select><br>
-            <label>Email Id : <input type="email" placeholder="Email"></label><br>
-            <label>Phone Number : <input type="text" placeholder="Phone number"></label>
+            <label class="form-label">Email Id : <input type="email" placeholder="Email"></label><br>
+            <label class="form-label">Phone Number : <input type="text" placeholder="Phone number"></label>
               <h3>Publication Details</h3>
               <label class="form-label">Title of publication : </label><input type="text" class="form-input"><br>
               <label class="form-label">Co-Authors : </label><input type="text" class="form-input"><br>
@@ -31,11 +31,15 @@
               <label for="International" class="form-label">International</label><br>
               <h3>Application For</h3>
                 <input type="radio" name="application" value="incentive" class="radio-btn">
-                <label for="incentive" class="form-label">Conference Registration/Publication Support</label><br>
+                <label for="conference-reg" class="form-label">Conference Registration/Publication Support</label><br>
                 <input type="radio" name="application" value="support" checked="checked" class="radio-btn">
-                <label for="support" class="form-label">Cash Award for conference publication</label><br>
+                <label for="conference-pub" class="form-label">Cash Award for conference publication</label><br>
                 <input type="radio"  name="application" value="journal-support" class="radio-btn">
-                <label for="journal-supprot" class="form-label">Journal Publication Support</label>
+                <label for="journal-pub" class="form-label">Cash Award for Journal Publication</label><br>
+                <input type="radio"  name="application" value="journal-support" class="radio-btn">
+                <label for="book-chp-pub" class="form-label">Cash Award for Book Chapter</label><br>
+                <input type="radio"  name="application" value="journal-support" class="radio-btn">
+                <label for="book" class="form-label">Cash Award for Book</label><br>
         </form>
     </div>
 </body>
