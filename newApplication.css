@@ -8,18 +8,21 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('images/hpbg2.jpeg') no-repeat ;
+    background: url('images/hpbg2.jpeg') no-repeat ; 
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
     background-size: cover;
     background-position: center;
 }
+
 .drop-down select {
     width: 100%;
-    padding: 10px 5px 10px 35px; /* Add left padding to accommodate the icon */
+    padding: 10px 5px 10px 35px;
     border: none;
-    border-bottom: 2px solid #adadad;
+    border-bottom: 2px solid #214d25;
     background: transparent;
     outline: none;
-    color: #a1ed35;
+    color: #2d4a04;
     font-size: 16px;
     transition: 0.2s;
     cursor: pointer;
@@ -27,9 +30,14 @@ body{
 }
 .form-label{
     left: 35px; /* Align with the input padding */
-    color: #0a8e17;
+    color: #214d25;
     transform: translateY(-50%);
     font-size: 20px;
-    pointer-events: none;
+    font-weight: 600;
     transition: 0.2s;
+}
+.form-input{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #214d25;
 }

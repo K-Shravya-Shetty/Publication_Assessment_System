@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Application</title>
+    <link rel="stylesheet" href="newApplication.css">
     <style>
         .hidden {
             display: none;
@@ -17,7 +18,8 @@
         <form>
             <h1>New Application</h1>
             <h3>Faculty Details</h3>
-            <label class="heading">Name : </label><input class="form-input" type="text" /><br />
+            <div class="drop-down">
+            <label class="form-label">Name : </label><input class="form-input" type="text" /><br />
             <label class="form-label">Department : </label><select class="option">
                 <option value="CSE">CSE</option>
                 <option value="ECE">ECE</option>
@@ -26,8 +28,9 @@
                 <option value="MECH">MECH</option>
                 <option value="CIV">CIVIL</option>
             </select><br />
-            <label class="form-label">Email Id : <input type="email" placeholder="" /></label><br />
-            <label class="form-label">Phone Number : <input type="text" placeholder="" /></label>
+        </div>
+            <label class="form-label">Email Id : <input type="email" placeholder="" class="form-input"/></label><br />
+            <label class="form-label">Phone Number : <input type="text" placeholder="" class="form-input"/></label>
             <h3>Publication Details</h3>
             <label class="form-label">Title of publication : </label><input type="text" class="form-input" /><br />
             <label class="form-label">Co-Authors : </label><input type="text" class="form-input" /><br />
