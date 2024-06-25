@@ -41,3 +41,14 @@ body{
     border: none;
     border-bottom: 2px solid #214d25;
 }
+.hidden-input{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #214d25;
+    margin-top:10px;
+}
+.hidden-label{
+    font-size: 18px;
+    font-weight: 600;
+    color: #214d25;
+}
