@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
   backdrop-filter: blur(10px);
   background-color: rgb(180, 180, 180);
-  background: url("images/hpbg2.jpeg") no-repeat;
+  /* background: url("images/hpbg2.jpeg") no-repeat; */
   /* background-color: rgba(227, 210, 210, 0.5); */
   background-blend-mode: lighten;
   background-size: cover;
@@ -19,24 +19,27 @@ body {
 h3 {
   font-size: 25px;
 }
+h4{
+  font-size: 25px;
+}
 .drop-down select {
-  width: 100%;
-  padding: 10px 5px 10px 35px;
-  border: none;
-  border-bottom: 2px solid #214d25;
+  width: 50%;
+  padding: 4px 2px 4px 5px;
+  /* border: none; */
+  border: 2px solid #214d25;
   background: transparent;
   outline: none;
-  color: #2d4a04;
-  font-size: 16px;
+  color: #000000;
+  font-size: 15px;
   transition: 0.2s;
   cursor: pointer;
   appearance: none; /* Remove default arrow of the select dropdown */
 }
 .form-label {
   left: 35px; /* Align with the input padding */
-  color: #214d25;
+  color: #000000;
   transform: translateY(-50%);
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
   transition: 0.2s;
   
@@ -45,22 +48,26 @@ h3 {
   background: transparent;
   /* border: none; */
   margin-bottom: 15px;
-  border-bottom: 2px solid #214d25;
+  border: 2px solid #000000;
+  font-size: 15px;
 }
 .hidden-input {
   background: transparent;
   /* border: none; */
-  border-bottom: 2px solid #214d25;
+  border: 2px solid #000000;
   margin-top: 10px;
 }
 .hidden-label {
   font-size: 18px;
   font-weight: 600;
-  color: #214d25;
+  color: #000000;
 }
 .form {
   border: 2px solid black;
   padding: 60px;
   background-color: white;
 
+}
+.option{
+  margin-bottom: 15px;
 }
