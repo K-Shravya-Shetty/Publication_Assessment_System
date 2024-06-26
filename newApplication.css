@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
   backdrop-filter: blur(10px);
   background-color: rgb(180, 180, 180);
-  /* background: url("images/hpbg2.jpeg") no-repeat; */
+  background: url("images/hpbg2.jpeg") no-repeat;
   /* background-color: rgba(227, 210, 210, 0.5); */
   background-blend-mode: lighten;
   background-size: cover;
@@ -58,5 +58,7 @@ h3 {
 }
 .form {
   border: 2px solid black;
-  padding: 40px;
+  padding: 60px;
+  background-color: white;
+
 }
