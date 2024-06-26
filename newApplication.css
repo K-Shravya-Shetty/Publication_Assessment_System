@@ -33,6 +33,13 @@ body {
     border-radius: 5px;
 }
 
+.radio-btn-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
 .radio-btn {
     margin-right: 10px;
 }
