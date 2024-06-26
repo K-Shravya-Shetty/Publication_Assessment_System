@@ -32,21 +32,35 @@
             <label class="form-label">Title of publication:</label><input type="text" class="form-input" /><br />
             <label class="form-label">Co-Authors:</label><input type="text" class="form-input" /><br />
             <label class="form-label">Type of publication:</label><br />
+            <div class="radio-btn-container">
             <input type="radio" name="typ-pub" value="incentive" class="radio-btn" />
             <label for="National" class="form-label">National</label><br />
+        </div>
+        <div class="radio-btn-container">
             <input type="radio" name="typ-pub" value="support" checked="checked" class="radio-btn" />
             <label for="International" class="form-label">International</label><br />
+        </div>
             <h3>Application For</h3>
+            <div class="radio-btn-container">
             <input type="radio" name="application" value="conference-reg" class="radio-btn" id="conference-reg">
             <label for="conference-reg" class="form-label">Conference Registration/Publication Support</label><br>
+        </div>
+            <div class="radio-btn-container">
             <input type="radio" name="application" value="conference-pub" checked="checked" class="radio-btn" id="conference-pub">
             <label for="conference-pub" class="form-label">Cash Award for conference publication</label><br>
+        </div>
+            <div class="radio-btn-container">
             <input type="radio" name="application" value="journal-pub" class="radio-btn" id="journal-pub">
             <label for="journal-pub" class="form-label">Cash Award for Journal Publication</label><br>
+        </div>
+            <div class="radio-btn-container">
             <input type="radio" name="application" value="book-chp-pub" class="radio-btn" id="book-chp-pub">
             <label for="book-chp-pub" class="form-label">Cash Award for Book Chapter</label><br>
+        </div>
+            <div class="radio-btn-container">
             <input type="radio" name="application" value="book" class="radio-btn" id="book">
             <label for="book" class="form-label">Cash Award for Book</label><br>
+        </div>
 
             <div id="conference-reg-fields" class="hidden">
                 <h4>Conference Registration/Publication Support Details</h4>
