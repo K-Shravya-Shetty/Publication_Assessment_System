@@ -26,7 +26,7 @@ h3 {
   border-bottom: 2px solid #214d25;
   background: transparent;
   outline: none;
-  color: #2d4a04;
+  color: #1a2b03;
   font-size: 16px;
   transition: 0.2s;
   cursor: pointer;
@@ -34,29 +34,27 @@ h3 {
 }
 .form-label {
   left: 35px; /* Align with the input padding */
-  color: #214d25;
+  color: #0b130c;
   transform: translateY(-50%);
   font-size: 20px;
-  font-weight: 600;
   transition: 0.2s;
-  
 }
 .form-input {
   background: transparent;
   /* border: none; */
   margin-bottom: 15px;
-  border-bottom: 2px solid #214d25;
+  border-bottom: 2px solid #000000;
 }
 .hidden-input {
   background: transparent;
   /* border: none; */
-  border-bottom: 2px solid #214d25;
+  border-bottom: 2px solid #0d2810;
   margin-top: 10px;
 }
 .hidden-label {
   font-size: 18px;
   font-weight: 600;
-  color: #214d25;
+  color: #000000;
 }
 .form {
   border: 2px solid black;
