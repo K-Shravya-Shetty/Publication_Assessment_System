@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Committee Proceedings</title>
+    <link rel="stylesheet" href="pcp.css">
+   <!-- <header>Assessment Committee Proceedings</header> -->
+</head>
+<body>
+    <form>
+        <h1>Assessment Committee Proceedings</h1>
+        <table>
+            <tr>
+                <td><strong>Cash award maybe given</strong></td>
+                <td>
+                    <input type="radio" name="radio" id="opt1"/>
+                    <label for="opt1" class="label1">
+                        <span>YES</span>
+                    </label>
+                    <input type="radio" name="radio" id="opt2"/>
+                    <label for="opt2" class="label2">
+                        <span>NO</span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Amount of cash award recommended</strong></td>
+                <td id="amountCell">
+                <input type="number" id="amount" placeholder="Enter amount (INR)" required>
+                <button onclick="submitAmount()">Submit</button>
+                <p id="approvalMessage"></p>
+                <button id="approveButton" onclick="approveAmount()" style="display:none;">Approve</button>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Enter the Remarks/Comments(if any)</strong></td>
+                <td id="remarksCell">
+                    <textarea id="comments" placeholder="Enter remarks/comments (if any)" rows="4" cols="50"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td id="uploadCell">
+                    <label><strong>Supporting document for Scopus indexing of article (if exists):</strong></label>
+                    <input type="file" id="scopusDoc">
+                    <br><br>
+                    <label><strong>Supporting document for Impact Factor of article (if exists):</strong></label>
+                    <input type="file" id="impactFactorDoc1">
+                    <br><br>
+                    <label><strong>Supporting document for Impact Factor of article (if exists):</strong></label>
+                    <input type="file" id="impactFactorDoc2">
+                    <br><br>
+                    <label><strong>Any other relevant document (if any):</strong></label>
+                    <input type="file" id="otherDoc">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
