@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Application</title>
+    <link rel="stylesheet" href="newApplication.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <form>
+            <h1>New Application</h1>
+            <h3>Faculty Details</h3>
+            <div class="drop-down">
+            <label class="form-label">Name : </label><input class="form-input" type="text" /><br />
+            <label class="form-label">Department : </label><select class="option">
+                <option value=" ">Select department</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="ICBS">ICBS</option>
+                <option value="EEE">EEE</option>
+                <option value="MECH">MECH</option>
+                <option value="CIV">CIVIL</option>
+            </select><br />
+        </div>
+            <label class="form-label">Email Id : <input type="email" placeholder="" class="form-input"/></label><br />
+            <label class="form-label">Phone Number : <input type="text" placeholder="" class="form-input"/></label>
+            <h3>Publication Details</h3>
+            <label class="form-label">Title of publication : </label><input type="text" class="form-input" /><br />
+            <label class="form-label">Co-Authors : </label><input type="text" class="form-input" /><br />
+            <label class="form-label">Type of publication</label><br />
+            <input type="radio" name="typ-pub" value="incentive" class="radio-btn" />
+            <label for="National" class="form-label">National</label><br />
+            <input type="radio" name="typ-pub" value="support" checked="checked" class="radio-btn" />
+            <label for="International" class="form-label">International</label><br />
+            <h3>Application For</h3>
+    <input type="radio" name="application" value="conference-reg" class="radio-btn" id="conference-reg">
+    <label for="conference-reg" class="form-label">Conference Registration/Publication Support</label><br>
+    <input type="radio" name="application" value="conference-pub" checked="checked" class="radio-btn" id="conference-pub">
+    <label for="conference-pub" class="form-label">Cash Award for conference publication</label><br>
+    <input type="radio" name="application" value="journal-pub" class="radio-btn" id="journal-pub">
+    <label for="journal-pub" class="form-label">Cash Award for Journal Publication</label><br>
+    <input type="radio" name="application" value="book-chp-pub" class="radio-btn" id="book-chp-pub">
+    <label for="book-chp-pub" class="form-label">Cash Award for Book Chapter</label><br>
+    <input type="radio" name="application" value="book" class="radio-btn" id="book">
+    <label for="book" class="form-label">Cash Award for Book</label><br>
+
+    <div id="conference-reg-fields" class="hidden">
+        <h4>Conference Registration/Publication Support Details</h4>
+        <label for="conf-name" class="hidden-label">Name of the conference:</label>
+        <input type="text" id="conf-name" class=" hidden-input" name="conf-name"><br>
+        <label class="hidden-label"class="hidden-label"for="conf-venue">Venue :</label>
+        <input type="text" id="conf-venue" class=" hidden-input" name="conf-venue"><br>
+        <label class="hidden-label"for="conf-date">Date of the conference:</label>
+        <input type="date" id="conf-date" class=" hidden-input"name="conf-date"><br>
+        <label class="hidden-label"for="conf-pub">Publisher :</label>
+        <input type="text" id="conf-pub" name="conf-pub"class=" hidden-input"><br>
+        <label for="conf-indx"class="hidden-label">Type of indexing:</label>
+        <input type="text" id="conf-indx" class=" hidden-input"name="conf-indx"><br>
+        <label class="hidden-label"for="conf-fee">Registration/Publication :</label>
+        <input type="text" id="conf-fee" class=" hidden-input"name="conf-fee"><br>
+        <label class="hidden-label"for="conf-payment">Name of the conference:</label>
+        <input type="text" class=" hidden-input"id="conf-payment" name="conf-payment"><br>
+        <label class="hidden-label"for="conf-sup">Support requested from college:</label>
+        <input type="text" id="conf-sup" class=" hidden-input" name="conf-sup"><br>
+    </div>
+
+    <div id="conference-pub-fields" class="hidden">
+        <h4>Cash Award for Conference Publication Details</h4>
+        <label  class="hidden-label" for="confer-name">Name of the conference :</label>
+        <input type="text" id="confer-name" name="confer-name"class=" hidden-input"><br>
+        <label class="hidden-label" for="confer-venue">Venue:</label>
+        <input type="text" id="confer-venue" name="confer-venue"class=" hidden-input"><br>
+        <label class="hidden-label" for="confer-date">Date of the Conference:</label>
+        <input type="date" id="confer-date" name="confer-date"class=" hidden-input"><br>
+        <label class="hidden-label" for="confer-pub">Publisher :</label>
+        <input type="text" id="confer-pub" name="confer-pub"class=" hidden-input"><br>
+        <label class="hidden-label" for="confer-indx">Type of indexing:</label>
+        <input type="text" id="confer-indx" name="confer-indx"class=" hidden-input"><br>
+        <!--Online link of publication pending-->
+    </div>
+
+    <div id="journal-pub-fields" class="hidden">
+        <h4>Cash Award for Journal Publication Details</h4>
+        <label for="journal-name" class="hidden-label">Name of the journal:</label>
+        <input type="text" id="journal-name" name="journal-name"class=" hidden-input"><br>
+        <label for="journal-pub-date" class="hidden-label">Date of publication:</label>
+        <input type="date" id="journal-pub-date" name="journal-pub-date"class=" hidden-input"><br>
+        <label for="journal-pub" class="hidden-label">Publisher :</label>
+        <input type="text" id="journal-pub" name="journal-pub"class=" hidden-input"><br>
+        <!--online link of publication pending-->
+        <label for="journal-indx" class="hidden-label">Type of indexing:</label>
+        <input type="text" id="journal-indx" name="journal-indx" class=" hidden-input"/><br>
+        <label for="journal-imp-fact" class="hidden-label">Impact Factor:</label>
+        <input type="text" id="journal-imp-fact" name="journal-imp-fact"class="hidden-input"><br>
+        <label for="journal-sjr" class="hidden-label">SJR Ranking:</label>
+        <input type="text" id="journal-sjr" name="journal-sjr" class="hidden-input"><br>
+    </div>
+    <div id="book-chp-pub-fields" class="hidden">
+        <h4>Cash Award for Book Chapter Details : </h4>
+        <label for="book-chapter-title" class="hidden-label">Name of the book :</label>
+        <input type="text" id="book-chapter-title" name="book-chapter-title" class=" hidden-input"><br>
+        <label for="book-chapter-edit" class="hidden-label">Name of Editors :</label>
+        <input type="text" id="book-chapter-edit" name="book-chapter-edit" class=" hidden-input"><br>
+        <label for="book-chapter-pub-date" class="hidden-label">Date of publication:</label>
+        <input type="date" id="book-chapter-pub-date" name="book-chapter-pub-date" class=" hidden-input"><br>
+        <label for="book-chapter-pub" class="hidden-label">Publisher :</label>
+        <input type="text" id="book-chapter-pub" name="book-chapter-pub" class=" hidden-input"><br>
+        <!--Online link of the publication-->
+        <label for="book-chapter-indx" class="hidden-label">Type of indexing :</label>
+        <input type="text" id="book-chapter-indx" name="book-chapter-indx" class=" hidden-input"><br>
+        <label for="book-chapter-impfact" class="hidden-label">Name of the book :</label>
+        <input type="text" id="book-chapter-impfact" name="book-chapter-impfact" class=" hidden-input"><br>
+        <label for="book-chapter-sjr" class="hidden-label">SJR Rating :</label>
+        <input type="text" id="book-chapter-sjr" name="book-chapter-sjr" class=" hidden-input"><br>
+    </div>
+    <div id="book-fields" class="hidden">
+        <h4>Cash Award for Book Details</h4>
+        <label for="book-title" class="hidden-label">Name of the book:</label>
+        <input type="text" id="book-title" name="book-title" class=" hidden-input"><br>
+        <label for="book-autr" class="hidden-label">Name of Authors :</label>
+        <input type="text" id="book-autr" name="book-autr" class=" hidden-input"><br>
+        <label for="book-pub-date" class="hidden-label">Publication Date:</label>
+        <input type="date" id="book-pub-date" name="book-pub-date" class=" hidden-input"><br>
+        <label for="book-pub" class="hidden-label">Publisher :</label>
+        <input type="text" id="book-pub" name="book-pub" class=" hidden-input"><br>
+        <label for="book-isbn" class="hidden-label">ISBN :</label>
+        <input type="text" id="book-isbn" name="book-isbn" class=" hidden-input"><br>
+        <label for="book-issn" class="hidden-label">ISSN :</label>
+        <input type="text" id="book-issn" name="book-issn" class=" hidden-input"><br>
+    </div>
+        </form>
+    </div>
+    <script src="newApplication.js"></script>
+</body>
+
+</html>
